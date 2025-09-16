@@ -1,0 +1,93 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+
+ Dark mode colors from crypto sanctions:
+background: #0F172A
+Dark footer background: #020617
+Highlighted: #172554
+Unhighlighted: #1E293B
+Alt: #60A5FA
+Buttons: #2563EB
+*/
+
+.heroBanner {
+  background: #0F172A;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 6px !important;   /* ↓ tighten top */
+  padding-bottom: 10px !important;/* ↓ tighten bottom */
+}
+
+/* Kill any theme hero padding if it sneaks in */
+:global(.hero) {
+  --ifm-hero-padding-vertical: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove container slack on this page */
+.heroBanner :global(.container) {
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+.heroLogo { 
+  width: clamp(144px, 36vw, 440px); 
+  height: auto; 
+  display: block;
+  margin: 0 auto -10px;  /* center + tight space below */
+  margin-top: -120px;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+
+}
+
+.heroTitle {
+  color: #ffffff;
+  margin-bottom: -10px;
+}
+
+.heroSubtitle {
+  color: rgba(255,255,255,.90);
+  line-height: 1.2;
+  margin: -150px 0 8px;
+  font-size: 1.5rem;
+}
+.heroCtas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Reduce the gap before the next section */
+:global(main) > :first-child {
+  margin-top: 0 !important;
+}
+.ctaPrimary {
+  background: #2563EB !important;
+  border-color: #2563EB !important;
+  color: #ffffff !important;
+}
+
+.ctaPrimary:hover {
+  background: #1D4ED8 !important;   /* hover */
+  border-color: #1D4ED8 !important;
+}
+
+@media screen and (max-width: 996px) {
+  /*
+  .heroBanner {
+    padding: 2rem;
+  }
+  */
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}

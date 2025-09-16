@@ -1,0 +1,138 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. 
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+*/
+
+:root {
+  --ifm-color-primary: #379BFF;
+  --ifm-color-primary-dark: #2F8AE6;
+  --ifm-color-primary-darker: #297AD1;
+  --ifm-color-primary-darkest: #1F5FA8;
+  --ifm-color-primary-light: #5AAEFF;
+  --ifm-color-primary-lighter: #77BDFF;
+  --ifm-color-primary-lightest: #A8D6FF;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-navbar-height: 50px; /* try 66–70 if you want finer control */
+  --ifm-navbar-background-color: #000000;
+  --ifm-navbar-link-color: #E6EDF7;
+  --ifm-navbar-link-hover-color: #A8D6FF; /* hover */
+
+
+}
+.footer--dark {
+  /*--ifm-footer-background-color: #0F172A;       your dark blue */
+  --ifm-footer-background-color: #000000;
+  --ifm-footer-color: rgba(255,255,255,.85);   /* body text */
+  --ifm-footer-title-color: #FFFFFF;           /* section headings */
+  --ifm-footer-link-color: #A8D6FF;           /* links */
+}
+/* For readability concerns, you should choose a lighter palette in dark mode. 
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+*/
+
+/*
+
+Original:
+[data-theme='dark'] {
+  --ifm-color-primary: #5AB8FF;
+  --ifm-color-primary-dark: #4AA6F0;
+  --ifm-color-primary-darker: #4298E0;
+  --ifm-color-primary-darkest: #357DC0;
+  --ifm-color-primary-light: #74C6FF;
+  --ifm-color-primary-lighter: #8FD2FF;
+  --ifm-color-primary-lightest: #BFE5FF;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+Dark mode colors from crypto sanctions:
+background: #0F172A
+Dark footer background: #020617
+Highlighted: #172554
+Unhighlighted: #1E293B
+Alt: #60A5FA
+Buttons: #2563EB
+
+*/
+
+[data-theme='dark'] {
+  --ifm-color-primary: #5AB8FF;
+  --ifm-color-primary-dark: #4AA6F0;
+  --ifm-color-primary-darker: #4298E0;
+  --ifm-color-primary-darkest: #357DC0;
+  --ifm-color-primary-light: #74C6FF;
+  --ifm-color-primary-lighter: #8FD2FF;
+  --ifm-color-primary-lightest: #BFE5FF;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+}
+
+/*
+[data-theme='dark'] {
+  --ifm-color-primary: Main background
+  --ifm-color-primary-dark: #4AA6F0;
+  --ifm-color-primary-darker: #4298E0;
+  --ifm-color-primary-darkest: #357DC0;
+  --ifm-color-primary-light: #74C6FF;
+  --ifm-color-primary-lighter: #8FD2FF;
+  --ifm-color-primary-lightest: #BFE5FF;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+  */
+
+
+
+.navbar__logo { 
+  height: 68px; 
+  width: auto;
+  transform: translateY(1px); /* adjust to -2px/-3px if it still feels low */
+}
+/* Keep the brand vertically centered */
+.navbar__brand { 
+  display: flex; 
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 996px) {
+  :root { --ifm-navbar-height: 56px; }
+  .navbar__logo { height: 44px; }
+  .navbar__link { font-size: 15px; padding: 0 10px; }
+  .navbar__items--left, .navbar__items--right { gap: 12px; }
+}
+
+.navbar,
+.navbar__inner,
+.navbar__brand,
+.navbar__items--left,
+.navbar__items--right {
+  height: var(--ifm-navbar-height);
+  display: flex;
+  align-items: center;
+}
