@@ -15,10 +15,12 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://www.doc.nominis.io',
+  //url: 'https://www.doc.nominis.io',
+  url: 'https://YotamBlum.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  //baseUrl: '/',
+  baseUrl: '/docs.nominis.io',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
