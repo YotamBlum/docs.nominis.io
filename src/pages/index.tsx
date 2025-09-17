@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={styles.heroBanner}>
       <div className="container">
-        <img src="/img/Logo_new_all_white.png" alt="Nominis" className={styles.heroLogo} />
+        <img src={useBaseUrl('/img/Logo_new_all_white.png')} alt="Nominis" className={styles.heroLogo} />
         <p className={styles.heroSubtitle}>
           Intelligent crypto compliance. Faster insights, smarter decisions.
         </p>
