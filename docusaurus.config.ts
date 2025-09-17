@@ -14,6 +14,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  trailingSlash: true, // explicit is better for GitHub Page
+
   // Set the production url of your site here
   //url: 'https://www.doc.nominis.io',
   url: 'https://YotamBlum.github.io',
