@@ -33,6 +33,7 @@
   --ifm-navbar-background-color: #000000;
   --ifm-navbar-link-color: #E6EDF7;
   --ifm-navbar-link-hover-color: #A8D6FF; /* hover */
+  --navbar-icon-color: #E6EDF7; /* icons */
 
 
 }
@@ -135,4 +136,9 @@ Buttons: #2563EB
   height: var(--ifm-navbar-height);
   display: flex;
   align-items: center;
+}
+
+.navbar button[class*="toggleButton"] {
+  opacity: 1 !important;          /* remove the faint look */
+  color: #ffffff !important;       /* high-contrast icon on your dark navbar */
 }
