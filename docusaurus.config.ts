@@ -17,7 +17,7 @@ const config: Config = {
   trailingSlash: true, // explicit is better for GitHub Page
 
   // Set the production url of your site here
-  //url: 'https://www.doc.nominis.io',
+  //url: 'https://www.docs.nominis.io',
   url: 'https://YotamBlum.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
